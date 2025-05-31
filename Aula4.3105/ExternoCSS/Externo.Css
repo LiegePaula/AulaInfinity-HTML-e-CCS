@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef6f7;
+    color: #333;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+/* Estilo para h1 com fundo */
+h1 {
+    color: white;
+    background-color: #3e787c;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Estilo para h2 com fundo */
+h2 {
+    color: white;
+    background-color: #477572;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Estilo para h3 com fundo */
+h3 {
+    color: white;
+    background-color: #4f9d9a;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+p {
+    margin-bottom: 15px;
+}

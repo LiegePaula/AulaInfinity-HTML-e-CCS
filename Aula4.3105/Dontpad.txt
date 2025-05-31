@@ -1,0 +1,130 @@
+Repo das aulas:
+https://github.com/thiagooshiro/HTML-Classes
+
+
+
+
+AULA 4 - Introdução ao CSS:
+	
+CSS inline:
+É o estilo aplicado diretamente em um elemento HTML usando o atributo style. 
+
+Exemplo: 
+<p style="color: red;">Texto</p>. O CSS inline afeta apenas o elemento onde está aplicado.
+
+CSS interno:
+É o CSS escrito dentro da própria página HTML, dentro da tag <style> que fica geralmente no <head>. .
+
+Exemplo:
+<head>
+  <style>
+    p { color: blue; }
+  </style>
+</head>
+
+
+CSS externo:
+É o CSS escrito em um arquivo separado com extensão .css, que é linkado na página HTML usando a tag <link>.
+
+Exemplo:
+
+<head>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+ 
+
+DOCUMENTO HTML PÁGINA DE JORNAL:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Notícia do Jornal</title>
+</head>
+<body>
+
+  <header>
+    <h1 class="titulo-principal">Jornal Diário</h1>
+    <h2 class="subtitulo-principal">Edição de 31 de Maio de 2025</h2>
+  </header>
+
+  <section class="noticia-principal">
+    <h2 class="titulo-noticia">Avanços na Tecnologia Espacial</h2>
+    <h3 class="subtitulo-noticia">Novos foguetes prometem maior eficiência</h3>
+    
+    <img src="espaco.jpg" alt="Imagem do foguete espacial" class="imagem-noticia" />
+    
+    <p class="lead">A indústria espacial está em rápida evolução com o desenvolvimento de novos foguetes mais econômicos e poderosos.</p>
+    
+    <p>Os engenheiros anunciaram que esses foguetes poderão reduzir os custos de lançamento em até 40%.</p>
+    
+    <p>Além disso, os avanços na tecnologia de propulsão prometem viagens espaciais mais seguras e rápidas.</p>
+  </section>
+
+  <section class="noticias-secundarias">
+    <article class="noticia">
+      <h3 class="titulo-noticia-secundaria">Economia global apresenta sinais de recuperação</h3>
+      <p class="resumo-noticia">Especialistas apontam crescimento gradual nos mercados emergentes.</p>
+    </article>
+
+    <article class="noticia">
+      <h3 class="titulo-noticia-secundaria">Evento cultural agita a cidade neste fim de semana</h3>
+      <p class="resumo-noticia">Shows, exposições e gastronomia para todos os gostos.</p>
+    </article>
+  </section>
+
+</body>
+</html>
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* espaço interno */
+    background-color: #f5f5f5; /* fundo clarinho */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra leve */
+    gap: 8px; /* espaçamento vertical entre h1 e h2 */
+}
+
+.titulo-principal {
+    color: rgb(88, 22, 22);
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    margin: 0; /* tira margem padrão */
+    letter-spacing: 1.5px; /* espaço entre letras */
+}
+
+.subtitulo-principal {
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+.titulo-noticia-secundaria {
+    display: flex;
+    justify-content: center;
+}
+
+.noticias-secundarias {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.noticia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.noticia p {
+    color: purple;
+}
