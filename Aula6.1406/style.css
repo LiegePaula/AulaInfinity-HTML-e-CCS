@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+
+    font-family: "Comic Neue" Arial, sans-serif;
+    background-color: #ffe6f0; /* rosa claro */
+    color: #333;
+    margin: auto;
+    padding: 0;
+
+    /* Centralização com flexbox */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; altura total da tela */
+
+    }
+
+    main {
+        max-width: 800px;
+        margin: auto;
+        padding: 15px 20px;
+        border-radius: 8px;
+      
+    }
+
+
+    header h1 {
+        text-align: center;
+        color: #d63384; /* tom de rosa mais escuro */
+    }
+
+    section {
+        margin-bottom: 30px;
+    }
+    
+
+    ul, ol {
+        padding-left: 20px;
+    }
+
+    h2 {
+        color: #d63384;
+        margin-top: 20px;
+    }
+
+    blockquote {
+        border-left: 4px solid #d63384;
+        padding-left: 16px;
+        margin: 20px 0;
+        font-style: italic;
+        color: #555;
+    }
+
+    p {
+        margin: 8px 0;
+    }
+    .imagem-redonda{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover; 
+    }
+    .cabecalho{
+        background: #ffd3e998;
+        padding: 1%;
+        margin-bottom: 5%;
+        border-radius: 30px;
+        text-align: center;
+
+    }
+    .cabecalho a{
+        color:#333;
+        font: normal 20pt arial;
+        text-align: center;
+    }
+        
+    .cabecalho a:visited{
+        color: antiquewhite;
+    }
+    .informações{
+        display: flex;
+        margin-bottom: 10%;
+        font: normal 30pt "Comic Neue";
+    
+    }
+    .bio{ 
+        font-size: 25px;
+        margin-top: 5%;
+        padding-left: 15%;
+        font: normal 25pt "Comic Neue";
+    }
+    .habilidades{
+        display: flex;
+        justify-content: space-between;
+        font: normal 15pt "Comic Neue";
+
+    }
+    .formulario{ 
+        text-align: center;
+        
+        border-radius: 30px;
+               
+
+    }
+    .formulario input{
+        color: #333; 
+        text-decoration: none;
+        font: normal 15pt "Comic Neue";
+        background-color: #ffd3e998;
+    }
