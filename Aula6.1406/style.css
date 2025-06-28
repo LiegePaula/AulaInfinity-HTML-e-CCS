@@ -108,4 +108,33 @@ body {
         text-decoration: none;
         font: normal 15pt "Comic Neue";
         background-color: #ffd3e998;
+
+    }
+    #mensagem{
+        
+        height: 250px;
+        width: 300px;
+    }
+    h1{
+        text-align: center;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas, todas com mesmo tamanho */
+        gap: 20px; /* Espaçamento entre os itens */
+        padding: 20px;
+    }
+
+    .grid2{ 
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item {
+        background-color: #a280a3;
+        padding: 80px;
+        text-align: center;
+        color: white;
+        border-radius: 5px;
+    }
+    .item img{
+        height: 300px;
     }

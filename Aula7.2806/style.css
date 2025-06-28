@@ -1,0 +1,38 @@
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagens{
+    display: flex;
+    flex-direction: column;
+    /* height: 300px; */
+    justify-content: center;
+    
+}
+#imagens img{
+    height: 500px;
+    width: 500px;
+    padding: 30px;
+    color: white;
+    border-radius: 5px;
+
+}
+
+#quem{
+    
+}
+h2{
+    text-align: center;
+
+}
+
+h3{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
