@@ -9,7 +9,7 @@ main{
 #imagens{
     display: flex;
     flex-direction: column;
-    /* height: 300px; */
+    max-width: 300dvh;
     justify-content: center;
     
 }
@@ -24,6 +24,9 @@ main{
 
 #quem{
     
+}
+h1{
+    text-align: center;
 }
 h2{
     text-align: center;
