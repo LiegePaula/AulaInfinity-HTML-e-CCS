@@ -1,0 +1,140 @@
+/* Reset básico */
+body, h1, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Corpo geral */
+body {
+    font-family: 'Arial', sans-serif;       /* fonte */
+    background-color: #EEF0F3;              /* cor de fundo da página */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #7E6277;              /* roxo acinzentado */
+    color: white;
+    text-align: center;
+    padding: 20px;                          /* espaçamento interno */
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header nav div {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #D9B4B2;                         /* rosa queimado claro */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #F47E8D;              /* rosa vibrante */
+    color: white;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #D9B4B2;              /* borda */
+}
+
+/* Seção inicial com foto e dados */
+main section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+main section div img {
+    max-width: 180px;
+    border-radius: 50%;                     /* borda arredondada */
+    border: 4px solid #D77E44;              /* laranja terroso */
+    margin: 15px;
+}
+
+main section div h1, main section div p {
+    font-size: 1.1em;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+/* Artigos */
+main article div {
+    margin-bottom: 20px;
+    background-color: #EEF0F3;              /* fundo cinza-claro */
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 6px solid #D77E44;         /* detalhe lateral laranja */
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* Aside */
+aside p span {
+    color: #F47E8D;                         /* rosa vibrante */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Links gerais no aside */
+aside a {
+    color: #7E6277;
+    text-decoration: underline;
+}
+
+aside a:hover {
+    color: #D77E44;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #7E6277;              /* roxo acinzentado */
+    color: white;
+    margin-top: 40px;
+    font-size: 0.95em;
+}
+
+/* Botão de contato */
+.botao-contato {
+    display: inline-block;
+    background-color: #D77E44;              /* laranja terroso */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid #D77E44;
+    margin-top: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao-contato:hover {
+    background-color: white;
+    color: #D77E44;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo com z-index</title>
+  <style>
+    .container {
+      text-align: center;
+    }
+
+    .bloco {
+      position: relative; /* cria contexto para z-index dos filhos */
+      z-index: 10; /* esse z-index faz efeito sobre filhos absolutos */
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .bloco img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .texto-sobreposto {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      padding: 20px;
+      color: white;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 15; /* maior que o z-index do container → vai na frente */
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 0, 0, 0.3);
+      z-index: 5; /* menor que texto-sobreposto → fica atrás do texto, mas na frente da imagem */
+    }
+  </style>
+</head>
+<body>
+
+  <header class="container">
+    <h1>MEU PERFIL</h1>
+  </header>
+
+  <nav class="bloco">
+    <img src="https://assets.puzzlefactory.com/puzzle/463/567/original.jpg" alt="Imagem de perfil">
+    
+    <div class="overlay"></div> <!-- camada vermelha semi-transparente -->
+
+    <div class="texto-sobreposto">
+      Sou o texto com z-index: 15 (fico na frente de tudo)
+    </div>
+  </nav>
+
+</body>
+</html>

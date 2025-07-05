@@ -1,0 +1,140 @@
+
+body, h1, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;       
+    background-color: #EEF0F3;              
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #7E6277;              
+    color: white;
+    text-align: center;
+    padding: 20px;                         
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header nav div {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #D9B4B2;                         
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #F47E8D;              
+    color: white;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #D9B4B2;             
+}
+
+
+main section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+main section div img {
+    max-width: 180px;
+    border-radius: 50%;                     
+    border: 4px solid #D77E44;              
+    margin: 15px;
+}
+
+main section div h1, main section div p {
+    font-size: 1.1em;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+
+main article div {
+    margin-bottom: 20px;
+    background-color: #EEF0F3;             
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 6px solid #D77E44;        
+}
+
+
+ul, ol {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+aside p span {
+    color: #F47E8D;                         
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+aside a {
+    color: #7E6277;
+    text-decoration: underline;
+}
+
+aside a:hover {
+    color: #D77E44;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #7E6277;              
+    color: white;
+    margin-top: 40px;
+    font-size: 0.95em;
+}
+
+
+.botao-contato {
+    display: inline-block;
+    background-color: #D77E44;            
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid #D77E44;
+    margin-top: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao-contato:hover {
+    background-color: white;
+    color: #D77E44;
+}

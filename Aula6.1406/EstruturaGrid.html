@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr  2fr  3fr;
+            grid-template-rows: 200px 100px;
+        }
+            .grid-container{
+            display: grid;
+           grid-template-areas: 'header header header'
+           'sidebar main main'
+           'footer footer footer';
+           grid-gap: 10px;
+           padding: 10px;
+        }
+        .header{
+            grid-area: header;
+            background-color: bisque;
+            padding: 20px;
+            text-align: center;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: aqua;
+            padding: 20px
+        }
+        .main{
+            grid-area: main;
+            background-color: black;
+            padding: 20px
+        }
+        .footer{
+            grid-area: footer;
+            background-color: brown;
+            padding: 20px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">cabeçalho</div>
+        <div class="sidebar">barra lateral</div>
+        <div class="main">conteudo principal</div>
+        <div class="footer">rodape</div>
+    </div>
+</body>
+</html>

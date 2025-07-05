@@ -1,0 +1,108 @@
+<!-- Atividade 06
+Crie uma página HTML e Siga os passos abaixo:
+adicione um cabeçalho, um menu de navegação, um conteúdo principal e um rodapé.
+Utilize media queries para ajustar o layout em três breakpoints diferentes: dispositivos
+móveis (max-width: 600px), tablets (min-width: 601px e max-width: 1024px) e desktops
+(min-width: 1025px).
+Objetivo:
+Criar um layout responsivo que se adapta a diferentes tamanhos de tela usando media
+queries. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+            @media (max-width: 600px) {
+            h1, h2{
+            font-size: x-large;
+            color: rgb(202, 18, 18);
+        }
+        nav{
+            font-size: large;
+            color: rgb(210, 16, 16);
+        }
+        p{
+            font-size: medium;
+            color: rgb(216, 22, 22);
+        }
+        footer{
+            font-size: small;
+            color: rgb(212, 18, 18);
+        }
+         img{
+            width:100px;
+            height: 100px;
+            align-items: center;
+        }
+    }
+           @media (min-width: 601px) and (max-width: 1024px) {
+            h1, h2{
+            font-size: x-large;
+            color: rgb(198, 207, 20);
+        }
+        nav{
+            font-size: large;
+            color: rgb(219, 216, 23);
+        }
+        p{
+            font-size: medium;
+            color: rgb(199, 215, 24);
+        }
+        footer{
+            font-size: small;
+            color: rgb(188, 218, 20);
+        }
+         img{
+            width:300px;
+            height: 300px;
+            align-items: center;
+        }
+    }
+           @media (min-width: 1025px) {
+            h1, h2{
+            font-size: x-large;
+            color: rgb(55, 7, 187);
+        }
+        nav{
+            font-size: large;
+            color: rgb(72, 10, 179);
+        }
+        p{
+            font-size: medium;
+            color: rgb(69, 19, 219);
+        }
+        footer{
+            font-size: small;
+            color: rgb(45, 10, 219);
+        }
+         img{
+            width:500px;
+            height: 500px;
+            align-items: center;
+        }
+    }
+
+    </STYLE>
+</head>
+<body>
+    <header>
+        <h1>Avanços na Tecnologia Espacia</h1>
+        <h2>Novos foguetes prometem maior eficiência</h2>
+            
+        <nav>
+        <img src="fundo-de-realidade-aumentada-com-dispositivo_23-2147808871.avif" alt=""> 
+        </nav>
+    </header>
+    <main>
+        <p>A indústria espacial está em rápida evolução com o desenvolvimento de novos foguetes mais econômicos e poderosos.</p>
+        <p> Os engenheiros anunciaram que esses foguetes poderão reduzir os custos de lançamento em até 40%.</p>
+        <P>Além disso, os avanços na tecnologia de propulsão prometem viagens espaciais mais seguras e rápidas.</p>
+    </main>
+    <footer>
+        <p>2025 Liege Mara Ferreira de Paula. Todos os direitos reservados</p>
+        
+    </footer>
+</body>
+</html>

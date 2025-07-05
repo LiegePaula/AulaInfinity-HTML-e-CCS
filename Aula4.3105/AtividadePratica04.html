@@ -1,0 +1,84 @@
+<!-- Atividade: Criação de Currículo com Estilização Básica e Estrutura Semântica
+Enunciado: Crie uma página HTML com um currículo simples (Ou refaça um existente) que inclua uma imagem de perfil, informações básicas,experiência profissional e formação acadêmica. Use CSS para estilizar o fundo, fontes, tamanhos, espaçamentos, bordas e aplicar arredondamento. Organize o conteúdo usando seções semânticas e não semânticas.
+Instruções:
+1.HTML
+Utilize elementos semânticos como <header>, <nav>, <main>, <section>, <article>, <aside>, e <footer> para estruturar o conteúdo do currículo.
+b.Dentro das seções semânticas, utilize <div> e <span> para organização não semântica.,
+c.Adicione uma imagem (<img>) para o perfil, um título (<h2>) para o nome do candidato, e parágrafos (<p>) para a descrição pessoal e os detalhes de contato.
+d.Crie seções para a experiência profissional e formação acadêmica, utilizando as tags apropriadas.
+2.CSS
+a.Aplique estilos semelhantes à versão anterior, ajustando background-color, padding, margin, border, border-radius, font-family, font-size, e font-weight.
+b.Estilize as seções semânticas e não semânticas para melhorar a aparência do currículo.
+Objetivo:
+Praticar a inserção de imagens e a aplicação de estilos CSS, além de compreender a diferença entre elementos semânticos e não semânticos na estrutura de um currículo em HTML. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AtividadePratica04.css">
+    <title>Curriculo</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Curriculo</h1>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="E-mail" target="_blank">E-mail</a></li>
+                    <li><a href="WhatsApp" target="_blank">WhatsApp</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+            <H1>Nome: Liege de Paula</H1>
+            <P>Idade: 43 anos</P>
+            <P>Endereço: Rua das Flores, Belo Horizonte</P>
+            <p>Profissão: Bancária</p>   
+            </div>
+            <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvyLNeL8k-kFqJaZdZgDav6XdzKkGArRjAvbYGnsqrSUkKTHEUUE86jh9T9nU13qO5qD4&usqp=CAU" alt="">
+            </div>
+            
+        </section>
+        <article>
+            <div>
+            <p>Formação acadêmica: Nutrição</p>
+            </div>
+            <div>
+            <p>Experiência Profissional: Caixa Econômica Federal desde 2002</p>
+            </div>
+            <div>
+            <p><strong>Tecnologias que domino e/ou pretendo dominar:</strong></p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Django</li> 
+                <li>GitHub</li>
+                <li>Python</li>
+            </ul>
+            </div>
+            <div>
+            <p><strong>Habilidades Socioemocionais</strong></p>
+            <ol>
+                <li>Resiliência</li>
+                <li>Paciência</li>
+                <li>Coragem</li>
+                <li>Serenidade</li>
+                <li>Trabalho em equipe</li>
+            </ol>
+            </div>
+        </article>
+        <aside>
+            <p SPAN style="color: red;">Minha pagina favorita: <a href="https://chatgpt.com/" target="_blank">ChatGPT</a></p>
+        </aside>
+    </main>
+      
+    <footer>
+        <p>2025 Liege Mara Ferreira de Paula. Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

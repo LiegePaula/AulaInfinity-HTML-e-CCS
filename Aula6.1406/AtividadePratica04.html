@@ -1,0 +1,44 @@
+<!-- Atividade 04
+
+Crie um parágrafo com várias linhas de texto.
+Use o pseudo-elemento ::first-letter para aumentar o tamanho da primeira letra e aplicar uma cor diferente.
+Use o pseudo-elemento ::first-line para aplicar estilos exclusivos à primeira linha, como mudança de cor e fonte.
+Estilize o parágrafo para que o resultado final seja visualmente atraente.
+Requisitos:
+Aplique estilos como font-size, color e font-weight para personalizar a primeira letra.
+Utilize estilos como color e font-style para a primeira linha do parágrafo.
+Objetivo:
+Utilizar os pseudo-elementos para aplicar estilos específicos à primeira letra e à primeira linha de
+um parágrafo. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    p {
+      font-size: 18px;
+      color: #333;
+      margin: 50px;
+    }
+
+    p::first-letter {
+      font-size: 5em;
+      color: green;
+      font-weight: bold;
+    }
+
+    p::first-line {
+      font-size: 1.2em;
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+    
+  <p>Este é um parágrafo simples com algum texto! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, sequi. Tempora qui iure a excepturi deserunt hic obcaecati modi fugit! Commodi sunt eum beatae debitis officiis aspernatur alias nobis voluptatibus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui vitae quaerat, adipisci ipsum porro nesciunt in ducimus placeat optio, dolore earum fugit. Dolores dignissimos velit animi assumenda obcaecati modi quidem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet adipisci ipsam iusto consequatur debitis officiis. Veritatis quisquam recusandae obcaecati dolorum. Sequi rem quibusdam incidunt corporis, a natus. Facere, minus! Repellendus?</p>
+
+</body>
+</html>

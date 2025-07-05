@@ -1,0 +1,60 @@
+<!-- Atividade 03
+Crie uma página com um cabeçalho fixo no topo da página e uma imagem que apareça abaixo dele. A imagem deve ter um efeito de sobreposição (usando z-index) sobre o cabeçalho ao rolar a página.
+Instruções:
+Crie um cabeçalho (<header>) e defina sua posição como fixed no topo da página.
+Crie uma imagem (<img>) logo abaixo do cabeçalho, com uma altura suficiente para que o usuário precise rolar a página para ver o restante da imagem.
+Aplique um z-index mais alto à imagem para garantir que ela apareça acima do cabeçalho quando o usuário rolar a página.
+Objetivo:
+Aprender a usar o posicionamento fixed para criar cabeçalhos fixos e manipular a ordem de empilhamento usando z-index. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 03 - Cabeçalho Fixo com Sobreposição</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      z-index: 1; 
+    }
+
+    .imagem-container {
+      position: relative;
+      z-index: 1; 
+      margin-top: 60px; 
+    }
+
+    .imagem-container img {
+      display: block;
+      width: 100%;
+      height: 2000px; 
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Cabeçalho Fixo
+  </header>
+
+  <div class="imagem-container">
+    <img src="https://assets.puzzlefactory.com/puzzle/463/567/original.jpg" alt="Imagem grande">
+  </div>
+
+</body>
+</html>
